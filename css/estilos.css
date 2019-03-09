@@ -1,0 +1,85 @@
+:root{
+    --colorPrimario:rgba(0, 0, 0, 0.753);
+    --colorSecundario: #e4e4e4a1;
+}
+
+/* ESTILOS GENERALES */
+body, html{
+   height: 100%; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    background: var(--colorPrimario);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* ESTILOS PARA LA CAJA DE FORMULARIO */
+
+.caja-formulario{
+    width: 300px;
+    padding: 50px;
+    background: var(--colorSecundario);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+/* ESTILOS PARA EL ICONO */
+
+.caja-formulario i{
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: var(--colorPrimario);
+}
+
+
+/* ESTILOS PARA LOS INPUTS DEL FORMULARIO */
+.caja-formulario input[type="text"],
+.caja-formulario input[type="password"],
+.caja-formulario input[type="submit"]{
+
+    border:1px solid var(--colorPrimario);
+    font-family: 'Gloria Hallelujah', cursive;
+    background: rgba(0, 0, 0, 0.753);
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    width: 200px;
+    outline: none;
+    color: var(--colorPrimario);
+    border-radius: 10px;
+    transition: 0.25s;
+
+}
+
+.caja-formulario input[type="text"]:focus,
+.caja-formulario input[type="password"]:focus{
+
+    width: 280px;
+    background: none;
+ 
+}
+
+.caja-formulario input[type="submit"]{
+    border:1px solid var(--colorPrimario);
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.caja-formulario input[type="submit"]:hover{
+    background: var(--colorPrimario);
+    color: var(--colorSecundario);
+}
